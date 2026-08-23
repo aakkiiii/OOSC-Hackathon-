@@ -67,7 +67,7 @@ Features **Email OTP verification**, **secure password reset**, **multi-criteria
 ## 📁 Project Structure
 
 ```text
-SCHOLAR-HUNT/
+SCHOLAR-HUNT/OOSC_HACKATHON
 ├── Backend/
 │   ├── controllers/      # Route controllers (user, job/scholarship, company/provider, application)
 │   ├── models/           # Mongoose schemas (User, Job, Company, Application)
@@ -96,8 +96,7 @@ SCHOLAR-HUNT/
 Clone the repository and navigate into the project:
 
 ```bash
-git clone https://github.com/ankitpathak62/JOB-PORTAL.git
-cd JOB-PORTAL
+cd OOSC-Hackathon
 ```
 
 ### 2. Backend Setup
@@ -131,7 +130,7 @@ NODE_ENV=development
 # Use comma-separated URLs for multiple origins
 CORS_ORIGIN=http://localhost:5173
 
-# AI (Job Recommendations)
+# AI (Scholarship Recommendations)
 AI_BASE_URL=https://api.clod.io/v1
 AI_API_KEY=your_ai_api_key
 AI_MODEL=openai/gpt-oss-120b
@@ -197,7 +196,7 @@ Change it if your backend is running on a different host or port.
 **Terminal 1 — Backend**
 
 ```bash
-cd JOB-PORTAL/Backend
+cd OOSC-Hackathon/Backend
 npm install
 npm run dev
 ```
@@ -205,7 +204,7 @@ npm run dev
 **Terminal 2 — Frontend**
 
 ```bash
-cd JOB-PORTAL/Frontend
+cd OOSC-Hackathon/Frontend
 npm install
 npm run dev
 ```
@@ -214,7 +213,7 @@ Then open:
 
 **http://localhost:5173**
 
-🎉 The Job Portal should now be running locally.
+🎉 The Scholar Portal should now be running locally.
 
 ---
 
@@ -291,12 +290,6 @@ Company-related operations include:
 
 ### 📄 Application API — `/api/application`
 
-Application-related operations include:
-
-* Apply for a job
-* View job applications
-* View applicants
-* Manage applications
 
 ---
 
@@ -392,7 +385,7 @@ npm run dev
 
 > Nodemon does not necessarily reload environment variables automatically.
 
-### AI Job Recommendations Not Showing
+### AI Scholar Recommendations Not Showing
 
 Check your AI configuration:
 
@@ -505,10 +498,10 @@ JOB-PORTAL/
 * 🔑 Forgot password with OTP
 * 🔄 Change password with OTP
 * 👤 User profile management
-* 💼 Job posting and searching
+* 💼 Scholarship posting and searching
 * 🏢 Company management
-* 📄 Job applications
-* 🤖 AI-powered job recommendations
+* 📄 Scholarship applications
+* 🤖 AI-powered Scholarship recommendations
 * ☁️ Cloudinary image uploads
 * 🔒 JWT-based authentication
 * 📱 Responsive frontend
